@@ -1,0 +1,207 @@
+.admin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.admin-title {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.admin-icon {
+  font-size: 3rem;
+  color: var(--accent-blue);
+}
+
+.admin-title h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.admin-title p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.admin-stats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 200px;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.text-blue { color: var(--accent-blue); }
+.text-green { color: #10b981; }
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* Table Styles */
+.admin-content {
+  padding: 2rem;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 1rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-table th {
+  padding: 1rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  border-bottom: 1px solid var(--glass-border);
+  white-space: nowrap;
+}
+
+.admin-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  vertical-align: middle;
+}
+
+.admin-table tbody tr {
+  transition: background-color 0.2s;
+}
+
+.admin-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.customer-info .text-sm {
+  display: block;
+  font-size: 0.875rem;
+}
+
+.route-sm {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.route-sm .arrow {
+  color: var(--accent-blue);
+}
+
+.flight-sm {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.seat-badge {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  font-size: 0.875rem;
+  font-family: monospace;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.status-badge.confirmed { background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
+.status-badge.pending { background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
+.status-badge.cancelled { background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.3); }
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn.confirm { color: #10b981; }
+.action-btn.cancel { color: #ef4444; }
+
+.action-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+.admin-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}

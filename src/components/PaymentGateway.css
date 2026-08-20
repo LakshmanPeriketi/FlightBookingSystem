@@ -1,0 +1,92 @@
+.payment-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.payment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.payment-amount {
+  text-align: right;
+}
+
+.payment-amount span {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.payment-amount h3 {
+  font-size: 1.5rem;
+  color: var(--accent-blue);
+  margin: 0;
+}
+
+.payment-form {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.secure-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #10b981;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+}
+
+.card-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.card-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-muted);
+  font-size: 1.25rem;
+}
+
+.glass-input.with-icon {
+  padding-left: 3rem;
+  font-family: monospace;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.payment-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.w-full {
+  flex: 1;
+}
